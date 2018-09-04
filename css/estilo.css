@@ -1,0 +1,79 @@
+body{
+    display: grid;
+    grid-template-areas: 'header header header' 'nav nav nav' 'section section aside' 'footer footer footer';
+    grid-template-rows: 15vh auto 65vh 10vh;
+    margin: 0;
+    padding: 0;
+}
+#header{grid-area: header; background-color: aquamarine;}
+#nav{grid-area: nav;background-color: greenyellow; display: flex; }
+#section{grid-area: section; background-color: rgb(255, 255, 255)}
+#aside{grid-area: aside; background-color: deepskyblue}
+#footer{grid-area: footer; background-color: red;}
+
+#header .preheader{
+    background-color: #222222;  
+    display: flex;  
+    justify-content: center;      
+}
+.preheader .primeira, .segunda, ul{
+    display: flex;
+    margin: 0;
+    padding: 0; 
+    justify-content: space-around;
+}
+.preheader .primeira, .segunda, ul, li{
+    width: 200px;
+    list-style: none;
+}
+.preheader .primeira, .segunda, ul, li, a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px;
+    text-align: center;
+}
+
+.preheader .segunda{
+    margin-left: 500px;
+}
+
+.menu{
+    margin: auto;
+}
+.menu ul{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li{
+    list-style: none;  
+    width: 150px;   
+}
+.menu a{
+    display: block;
+    text-decoration:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    color: #000000;
+}
+.menu a:hover{
+    background-color: #222222;
+    color: aliceblue;
+}
+.menu ul ul{
+    visibility: hidden;
+    position: absolute;
+    flex-direction: column;
+}
+.menu ul li:hover ul{
+    visibility: visible;
+}
+.menu ul ul a{
+    background-color: greenyellow;
+}
