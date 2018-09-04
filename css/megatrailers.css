@@ -17,6 +17,21 @@ body{
 .cinza {
     color: #cbcccd;
 }
+.horizontal > li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.horizontal{
+    margin: 0;
+    padding: 0;
+    color: dimgray;
+}
+.ativo{
+    color: white;
+}
+.grande{
+    font-size: 180% !important;
+}
 /* Formatação da chamada principal*/
 .chamada{
     background: linear-gradient(rgba(0, 0, 0,.2), rgba(0,0,0,.7)), url(https://img.youtube.com/vi/4r0287tUEgk/maxresdefault.jpg);
@@ -44,13 +59,54 @@ h2{
     text-shadow: 3px 3px 0 #000000;
 }
 .parte_superior{
-    
     height: 90px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-content: center;
+    margin-top: 10px;
+}
+.logo{
+    position:absolute;
     margin-top: 15px;
+    left: 10px;
 }
 .logo > img{
     width: 250px;
+}
+.logo_face{
+    position: absolute;
+    margin-top: 30px;
+    right: 70px;
+    display: flex;
+    align-items: flex-end;
+}
+.boas_vindas{
+    font-weight: bold;
+    font-size: 80%;
+    margin-right: 5px;
+    text-align: right;
+}
+/*seção miniaturas*/
+.miniaturas{
+    margin-top: -125px;
+    padding: 0 2%;
+}
+.figuras{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+figure{
+    margin: 5px;
+}
+figure > img{
+    width: 170px;
+    height: 300px;
+}
+.menu{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
