@@ -120,22 +120,22 @@ figure{
 }
 figure > img{
     width: 170px;
-    height: 300px;
+    height: 250px;
     position: relative;
     z-index:1 ;
     transition: all .5s linear;
 }
-figure > img:hover{
+.cartaz:hover{
     opacity: .2;
 }
 figcaption{
     width: 170px;
-    height: 300px;
+    height: 250px;
     background: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -305px;
+    margin-top: -255px;
 }
 .menu{
     margin-bottom: 10px;
@@ -242,4 +242,83 @@ li .link:hover{
 }
 .link:hover{
     color: #ffffff;
+}link:hover{
+    color: #ffffff;
+}
+/*pagina detalhe*/
+.player{
+    display: flex;
+    z-index: 0;
+    position:fixed;
+    top: 0;
+}
+.player > iframe{
+    width: 100vw;
+    height: 100vh;
+}
+.movie_info{
+    z-index: 1;
+    position:relative;
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7));
+    
+}
+.area_info{
+    display: flex;
+    margin: 37vh 2% 0 2%;
+    height: 600px;
+}
+.cartaz_detalhe{
+    width: 180px;
+    height: 100%;
+    margin: 7px;
+}
+.cartaz_detalhe > figure{
+    margin: 0;
+}
+.trailer_detalhe{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+.titulo_detalhe{
+    height: 250px;
+    margin: 7px;
+    margin-top: 110px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.corpo_artigo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.lateral_detalhe{
+    width: 300px;
+    height: 100%;
+    background-color: #337ab7;
+    margin: 7px;
+}
+.texto_artigo{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    margin: 7px;
+}
+.star > li{
+    margin: 0 2px;
+    font-size: 1.5em !important;
+}
+.star{
+    text-align: center;
+    margin: 8px 0 8px 0;
+}
+.data_lancamento{
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+}
+.data_lancamento i{
+    margin-right: 5px;
 }
